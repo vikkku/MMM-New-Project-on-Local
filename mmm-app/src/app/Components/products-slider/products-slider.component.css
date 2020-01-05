@@ -1,0 +1,21 @@
+section.banner-slide {
+    padding: 10px 0;
+}
+.banner-slide .item {
+    text-align: center;
+    color: #fff;
+}
+.banner-slide .item>img.slide-image {
+    display: block;
+    width: auto !important;
+    margin: 0 auto !important;
+}
+.slide-text>p {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: inline-block;
+    border-bottom: 1px solid #fff;   
+    min-height: 32px;
+    margin-bottom: 0;
+}
+

@@ -1,0 +1,5 @@
+.about-comp  .item>img.slide-image {
+    display: block;
+    width: auto !important;
+    margin: 0 auto !important;
+}

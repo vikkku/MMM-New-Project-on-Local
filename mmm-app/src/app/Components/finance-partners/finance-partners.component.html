@@ -1,0 +1,21 @@
+<section class="about-comp-finance main-bg-two-color p-b-20 p-t-20">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 class="text-uppercase text-center">Our <strong>90+</strong> Finance Partners  </h2>
+        <p>MyMoneyMantra with its 100+ finance partners strives to get you the best loan deals and Credit Card offers online in just a few clicks. You can compare various loan products online with latest interest rates from reputed banks and NBFCs in India including HDFC, ICICI Bank, Citibank, SBI, PNB, Axis, Tata Capital, American Express and other partners. Our team of financial experts works hard to find and get you the best deal.</p>
+      </div>
+      <div class="col-sm-10 offset-sm-1 text-center">
+        <owl-carousel class="cus-fin-slider" [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+          <div class="item" *ngFor="let image of images;let i= index">
+            <img class="slide-image" src="{{image.image}}" >
+            <div class="slide-text">
+              <p>{{image.text}}</p>
+            </div>
+          </div>
+        </owl-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+

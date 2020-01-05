@@ -1,0 +1,22 @@
+<section class="why-mmm-box-blog">
+  <div class="container-fluid p-l-o p-r-o">
+    <div class="row">
+      <div class="col-sm-12 p-l-o p-r-o text-center">
+        <h3>From Our <span class="txt-grn-col">Blog</span></h3>
+      </div>
+      <div class="col-sm-12 text-center">
+        <div class="cus-blg-sld p-l-25">
+          <owl-carousel  [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+            <div class="item" *ngFor="let image of images;let i= index">
+              <div class="blog-slide-text">
+                <img class="slide-image" src="{{image.image}}" >
+                <h4 class="blog-title">{{image.text}}</h4>
+                <div class="discription-blog"><p>{{image.ptext}}</p></div>
+              </div>
+            </div>
+          </owl-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

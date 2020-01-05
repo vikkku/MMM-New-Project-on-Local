@@ -1,0 +1,29 @@
+<router-outlet></router-outlet>
+<div class="clearfix top-space"></div>
+<section class="cus-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="home-search-form" id="productId" name="productid">
+          <form id="productForm" onsubmit="showProductPage();">
+              <div class="inline-form">
+                  <span class="">
+                      <i class="fa fa-angle-double-down pro-rit-arr"></i>
+                      <select class="searchselect">
+                          <option *ngFor="let i of products">{{i}}</option>
+                      </select>
+                  </span>
+                   <span>
+                      <i class="fa fa-inr" aria-hidden="true"></i>
+                     <input type="tel" placeholder="Enter loan amount" name="loanamount" id="loanAmount" class="cstm-hide form-search" onkeypress="return onlyNumeric(event);" onkeyup="return callIndianFormatter(this);">
+                   </span> 
+              </div>
+              <div class="btn-searchbox text-center">
+                  <input type="button" name="" class="btn-search" value="Let's get the best offers" onclick="showProductPage();">
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

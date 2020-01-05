@@ -1,0 +1,27 @@
+<section class="banner-slide main-bg-three-color">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7 offset-sm-3">
+          <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+            <div class="item" *ngFor="let image of images;let i= index">
+              <a routerLink="{{image.liks}}">
+                <img class="slide-image" src="{{image.image}}" >
+                <div class="slide-text">
+                  <p>{{image.text}}</p>
+                </div>
+              </a>
+            </div>
+          </owl-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="p-b-25 p-t-25">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+          <p class="m-b-0">Compare <a routerLink="/personal-loan">Personal Loan</a>, <a routerLink="/loan-against-property">Loan Against Property</a>, <a routerLink="/home-loan">Home Loan</a>, <a routerLink="/business-loan">Business Loan</a> and <a routerLink="/credit-card">Credit Card</a> offers on the basis of interest rates, loan amount eligibility, loan tenure, EMI, processing fees, and prepayment charges. Calculate your loan eligibility using our loan <a routerLink="/emi-calculators">EMI Calculators.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
